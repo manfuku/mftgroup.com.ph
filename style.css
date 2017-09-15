@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700,300');
+@import url('https://brick.a.ssl.fastly.net/Aileron:200,300,900:f');
+
+html {
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+}
+
+/* STRUCTURE +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+body {
+margin: 0;
+font: 16px/1 'Work Sans', serif;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+color: #757575;
+text-align: center;
+}
+
+/* URL BAR FIX +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+html, body, .container-fluid { height: 100%; overflow: hidden; }
+.container-fluid { position: relative; overflow-y: auto; }
+
+/* TYPOGRAPHY +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+h1, h2		{ margin-bottom: 2rem }	
+
+b, strong	{ font-weight: 700; }
+h1			{ font-weight: 300; font-size: 3rem; /* letter-spacing: -0.2rem */ }	
+h2			{ font-weight: 900; font-size: 2rem; color: #29B2AD; }	
+h3			{ font-weight: 700; font-size: 1.25rem; color: rgb(41, 178, 173); }	
+h4			{ font-weight: 400; font-size: 0.90rem; color: #757575 }	
+p			{ font-weight: 400; font-size: 1rem; /* font-family: 'Arimo' */ }	
+
+h1, 
+h1 strong,
+h2			{ font-family: 'Aileron' }
+
+/* UTILS +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+img			{ width: 100%; }
+.on-dark	{ color: #fff; }
+.lt-green 	{ color: #fff; background: #29B2AD; }
+.dk-green 	{ color: #fff; background: #1B5F58; }
+
+.lt-green h2,
+.dk-green h2	{ color: inherit; }
+
+.text-green		{ color: #29B2AD;}
+
+/* SECTIONS & ROWS +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+.container .row { margin-bottom: 2rem }
+.container .row:last-child { margin-bottom: 0 }
+
+section { 
+padding-top: 	calc(6.4vw * 2);
+padding-bottom: calc(6.4vw * 2.5);
+padding-bottom: calc(6.4vw * 1.75); /* 1709 */
+position: relative;
+}
+
+section.lt-green,
+section.dk-green {
+padding-top: 	calc(6.4vw * 2.5);
+padding-bottom: calc(6.4vw * 3);
+}
+
+
+section::before,
+section::after {
+content: '';
+background: url(img/section-diagonal.svg) no-repeat;
+background-size: cover;
+width: 100%;
+height: 10rem;
+display: block;
+position: absolute;
+} 
+
+		section::before {
+		content: '';
+		background-position: right;
+		top: -1px;
+		} 
+
+		section::after {
+		content: '';
+		background-position: right;
+		transform: rotate(180deg);
+		bottom: -1px;
+		} 
+ 
+section:nth-child(-n+2)::before,
+section:first-child::after,
+section:last-child::after {
+content: '';
+background: none;
+} 
+
+/* SPECIFIC SECTIONS +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+#header {
+position: absolute;
+width: 100%;
+padding: 0;
+z-index: 99999
+}
+
+#logo img { width: 5rem }
+
+#intro { 
+height: calc(100vh + 6.4vw);
+/* height: calc(106.4vh); */
+background: url(img/kaiqxku4wsa-ian-baldwin-cropped.jpg);
+background-position: center center;
+background-size: cover;
+padding-top: 25vh;
+}
+
+#intro #keep-it-100 {
+position: absolute;
+top: 55vh;
+transform: translateY(-50%);
+}
+
+#our-people-people > div	{ margin-bottom: 2rem }
+#our-people-people img 		{ border-radius: 50%; margin-bottom: 1rem; max-width: 12rem }
+
+
+
+
+
+/* TABLET & UP +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+@media (min-width: 600px) {
+
+/* .container .row > div > :last-child { margin-bottom: 0 } */
+
+/* section.lt-green,
+section.dk-green {
+padding-top: 7rem;
+padding-bottom: 8rem;
+} */
+
+#logo img 	{ width: 6rem	}
+
+#intro h1	{ font-size: 4.25rem; }	
+h1			{ font-size: 3.00rem; }	
+h2			{ font-size: 2.00rem; }	
+h3, p		{ font-size: 1.10rem; }	
+h4			{ font-size: 0.90rem; }	
+
+
+}
+
+
+
+
+
+
+/* DESKTOP & UP +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+@media (min-width: 992px)  {
+
+#intro 		{ padding-top: 30vh; }
+
+#logo img 	{ width: 8rem	}
+
+/* section { 
+padding-top: 9rem;
+padding-bottom: 9rem;
+}
+
+section.lt-green,
+section.dk-green {
+padding-top: 15rem;
+padding-bottom: 15rem; 
+} */
+
+h1, h2		{ margin-bottom: 5rem }	
+
+h1			{ font-size: 4.25rem; }	
+h2			{ font-size: 2.50rem; }	
+h3, p		{ font-size: 1.75rem; }	
+h4			{ font-size: 1.5rem; }	
+
+#our-people-people img 		{ max-width: 16rem }
+
+
+}
+
+
+
+
+
+
+
+
+/* SET MAX WIDTH TO 1400 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+@media (min-width: 1400px) {
+	
+.container 	{ width: 1400px }
+
+#intro h1	{ font-size: 6.0rem; }	
+
+}
+
+
