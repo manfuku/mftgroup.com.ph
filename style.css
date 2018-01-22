@@ -1,46 +1,60 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700,300');
-@import url('https://brick.a.ssl.fastly.net/Aileron:200,300,900:f');
-
-html {
+/* html {
 -ms-text-size-adjust: 100%;
 -webkit-text-size-adjust: 100%;
-}
+} */
 
 /* STRUCTURE +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 body {
 margin: 0;
-font: 16px/1 'Work Sans', serif;
+font: 16px/1.5 'Work Sans', serif;
 -moz-osx-font-smoothing: grayscale;
 -webkit-font-smoothing: antialiased;
 color: #757575;
-text-align: center;
+color: #424242;
+
 }
 
+/* NAVIGATION +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+ul.nav li {
+	
+	margin-left: 1rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	
+}
+
+ul.nav li a {
+	
+	color: #fff !important;
+	
+	
+}
+
+ul.nav li a:hover {
+	
+	text-decoration: none;
+	opacity: 1;
+	
+}
 /* URL BAR FIX +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
-html, body, .container-fluid { height: 100%; overflow: hidden; }
-.container-fluid { position: relative; overflow-y: auto; }
+/* html, body, .container-fluid { height: 100%; overflow: hidden; }
+.container-fluid { position: relative; overflow-y: auto; } */
 
-/* TYPOGRAPHY +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
-h1, h2		{ margin-bottom: 2rem }	
 
-b, strong	{ font-weight: 700; }
-h1			{ font-weight: 300; font-size: 3rem; /* letter-spacing: -0.2rem */ }	
-h2			{ font-weight: 900; font-size: 2rem; color: #29B2AD; }	
-h3			{ font-weight: 700; font-size: 1.25rem; color: rgb(41, 178, 173); }	
-h4			{ font-weight: 400; font-size: 0.90rem; color: #757575 }	
-p			{ font-weight: 400; font-size: 1rem; /* font-family: 'Arimo' */ }	
-
-h1, 
-h1 strong,
-h2			{ font-family: 'Aileron' }
 
 /* UTILS +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+a 			{ color: inherit !important;  }
+a:hover		{ text-decoration: none; opacity: 0.9 }
+
 img			{ width: 100%; }
 .on-dark	{ color: #fff; }
 .lt-green 	{ color: #fff; background: #29B2AD; }
 .dk-green 	{ color: #fff; background: #1B5F58; }
 
+.lt-green h1,
 .lt-green h2,
+.dk-green h1,
 .dk-green h2	{ color: inherit; }
 
 .text-green		{ color: #29B2AD;}
@@ -52,8 +66,7 @@ img			{ width: 100%; }
 
 section { 
 padding-top: 	calc(6.4vw * 2);
-padding-bottom: calc(6.4vw * 2.5);
-padding-bottom: calc(6.4vw * 1.75); /* 1709 */
+padding-bottom: calc(6.4vw * 1.75); 
 position: relative;
 }
 
@@ -61,6 +74,23 @@ section.lt-green,
 section.dk-green {
 padding-top: 	calc(6.4vw * 2.5);
 padding-bottom: calc(6.4vw * 3);
+} 
+
+
+@media (min-width: 992px)  {
+
+	section { 
+	padding-top: 	calc(6.4vw * 1);
+	padding-bottom: calc(6.4vw * 0.75); 
+	position: relative;
+	}
+
+	section.lt-green,
+	section.dk-green {
+	padding-top: 	calc(6.4vw * 1.5);
+	padding-bottom: calc(6.4vw * 2);
+	} 
+
 }
 
 
@@ -93,6 +123,7 @@ section:first-child::after,
 section:last-child::after {
 content: '';
 background: none;
+z-index: -1;
 } 
 
 /* SPECIFIC SECTIONS +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
@@ -101,28 +132,91 @@ background: none;
 position: absolute;
 width: 100%;
 padding: 0;
-z-index: 99999
+z-index: 999
 }
+
+/* #header .row > * {
+		z-index: 9999;
+} */
 
 #logo img { width: 5rem }
 
-#intro { 
-height: calc(100vh + 6.4vw);
-/* height: calc(106.4vh); */
-background: url(img/kaiqxku4wsa-ian-baldwin-cropped.jpg);
+.intro { 
+padding-top: 25vh  !important;
+padding-bottom: 20vh !important;
 background-position: center center;
 background-size: cover;
-padding-top: 25vh;
+
 }
 
-#intro #keep-it-100 {
-position: absolute;
-top: 55vh;
-transform: translateY(-50%);
+
+
+#home .intro { 
+background-image: url(img/kaiqxku4wsa-ian-baldwin-cropped-d25.jpg);
+background-image: url(img/sean-pollock-203658.jpg);
+background-position: center bottom;
 }
 
-#our-people-people > div	{ margin-bottom: 2rem }
-#our-people-people img 		{ border-radius: 50%; margin-bottom: 1rem; max-width: 12rem }
+#our-people .intro {
+background-image: url(img/stefan-stefancik-257625.jpg);
+
+}
+#portfolio .intro {background-image: url(img/jc-gellidon-447350.jpg);}
+#our-impact .intro {background-image: url(img/larm-rmah-216854.jpg);}
+	
+	
+/* 
+
+#our-people figure:after {
+	content: "";
+	display: block; 
+	width: 100%;
+	height: 100%;
+	background: #29B2AD;
+} */
+
+#subsidiaries ul  { 
+list-style: none;
+margin: 0;
+padding: 0;
+}
+#subsidiaries ul li { 
+list-style: none;
+width: 30%;
+display: inline-block;
+padding: 1rem 3rem 3rem;
+text-align: center;
+}
+
+#subsidiaries ul li img { 
+max-height: 5rem;
+max-width: 100%;
+width: auto;
+}
+
+#footer {
+padding-bottom: calc(6.4vw * 1);
+}
+/* TYPOGRAPHY +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+h1, h2		{ /* margin-bottom: 2rem; */ line-height: 1 }	
+
+b, strong	{ font-weight: 700; }
+
+h1			{ font-weight: 300; font-size: 3.50rem; color: #29B2AD;/* letter-spacing: -0.2rem */ }	
+h2			{ font-weight: 700; font-size: 2.0rem; /* color: #29B2AD; */ }	
+h3			{ font-weight: 700; font-size: 1.25rem; /* color: rgb(41, 178, 173); */ }	
+h4			{ font-weight: 400; font-size: 0.90rem; /* color: #757575 */ }	
+
+p			{ font-weight: 400; font-size: 0.9rem; /* font-family: 'Arimo' */ }	
+
+figure 		{ background: #F5F5F5; overflow: hidden; }
+figcaption	{ font-weight: 400; font-size: 0.8rem; margin: 0.5rem; font-style: italic; }	
+.lt-green p,
+.dk-green p	{ font-weight: 400; font-size: 0.95rem; /* font-family: 'Arimo' */ }	
+
+/* h1, 
+h1 strong,
+h2			{ font-family: 'Aileron' } */
 
 
 
@@ -139,13 +233,13 @@ padding-top: 7rem;
 padding-bottom: 8rem;
 } */
 
-#logo img 	{ width: 6rem	}
+/* #logo img 	{ width: 6rem	}
 
 #intro h1	{ font-size: 4.25rem; }	
 h1			{ font-size: 3.00rem; }	
 h2			{ font-size: 2.00rem; }	
 h3, p		{ font-size: 1.10rem; }	
-h4			{ font-size: 0.90rem; }	
+h4			{ font-size: 0.90rem; }	 */
 
 
 }
@@ -158,29 +252,18 @@ h4			{ font-size: 0.90rem; }
 /* DESKTOP & UP +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 @media (min-width: 992px)  {
 
-#intro 		{ padding-top: 30vh; }
+/* #intro 		{ padding-top: 30vh; }
 
 #logo img 	{ width: 8rem	}
-
-/* section { 
-padding-top: 9rem;
-padding-bottom: 9rem;
-}
-
-section.lt-green,
-section.dk-green {
-padding-top: 15rem;
-padding-bottom: 15rem; 
-} */
 
 h1, h2		{ margin-bottom: 5rem }	
 
 h1			{ font-size: 4.25rem; }	
 h2			{ font-size: 2.50rem; }	
-h3, p		{ font-size: 1.75rem; }	
+h3, p		{ font-size: 1.125rem; }	
 h4			{ font-size: 1.5rem; }	
 
-#our-people-people img 		{ max-width: 16rem }
+#our-people-people img 		{ max-width: 16rem } */
 
 
 }
@@ -197,7 +280,7 @@ h4			{ font-size: 1.5rem; }
 	
 .container 	{ width: 1400px }
 
-#intro h1	{ font-size: 6.0rem; }	
+/* #intro h1	{ font-size: 6.0rem; }	 */
 
 }
 
