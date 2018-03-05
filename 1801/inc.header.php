@@ -7,9 +7,9 @@
 
 <title>MFT Group</title>
 
-<link rel="shortcut icon" href="img/mft-logo.png" /> 
+<link rel="shortcut icon" href="img/logo-mft-gold.png" /> 
 
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:300,700,400|Material+Icons">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,600,700|Material+Icons">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css">
 

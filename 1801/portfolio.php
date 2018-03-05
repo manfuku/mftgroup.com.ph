@@ -18,7 +18,7 @@
 		</div>
 		
 		<div class="col-md-7 text-md-left">
-		<p>We identify investment opportunities to grow companies-and-enhance their values. </p>
+		<p>We identify investment opportunities to grow companies and enhance their values. Deep expertise in core industries is what drives MFT Group’s ability to create value. Through collaboration, that expertise is shared across fund, industry and geography to harness the power of our global network. </p>
 
 		</div>
 	
@@ -34,7 +34,7 @@
 
 
 			<div class="col-md-4 ">
-				<h2>Finance</h2>
+				<h2>Finance &amp; Banking</h2>
 				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. </p>
 			</div>
 			

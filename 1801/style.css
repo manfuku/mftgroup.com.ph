@@ -36,6 +36,8 @@ ul.nav li a:hover {
 	opacity: 1;
 	
 }
+
+.btn { font-weight: 600 }
 /* URL BAR FIX +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 /* html, body, .container-fluid { height: 100%; overflow: hidden; }
 .container-fluid { position: relative; overflow-y: auto; } */
@@ -44,13 +46,13 @@ ul.nav li a:hover {
 
 /* UTILS +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 
-a 			{ color: inherit !important;  }
+a 			{ color: inherit !important; font-weight: 600;  }
 a:hover		{ text-decoration: none; opacity: 0.9 }
 
 img			{ width: 100%; }
 .on-dark	{ color: #fff; }
-.lt-green 	{ color: #fff; background: #29B2AD; }
-.dk-green 	{ color: #fff; background: #1B5F58; }
+.lt-green 	{ color: #000; background: #be9c30; }
+.dk-green 	{ color: #fff; background: #000; }
 
 .lt-green h1,
 .lt-green h2,
@@ -66,7 +68,7 @@ img			{ width: 100%; }
 
 section { 
 padding-top: 	calc(6.4vw * 2);
-padding-bottom: calc(6.4vw * 1.75); 
+padding-bottom: calc(6.4vw * 2); 
 position: relative;
 }
 
@@ -87,7 +89,7 @@ padding-bottom: calc(6.4vw * 3);
 
 	section.lt-green,
 	section.dk-green {
-	padding-top: 	calc(6.4vw * 1.5);
+	padding-top: 	calc(6.4vw * 2);
 	padding-bottom: calc(6.4vw * 2);
 	} 
 
@@ -100,7 +102,7 @@ content: '';
 background: url(img/section-diagonal.svg) no-repeat;
 background-size: cover;
 width: 100%;
-height: 10rem;
+height: 12rem;
 display: block;
 position: absolute;
 } 
@@ -126,12 +128,18 @@ background: none;
 z-index: -1;
 } 
 
+@media (min-width: 992px ) {
+.col-md-1of5 {
+max-width: 20% !important;
+}
+}
+
 /* SPECIFIC SECTIONS +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
 
 #header {
 position: absolute;
 width: 100%;
-padding: 0;
+padding: 1rem 0;
 z-index: 999
 }
 
@@ -152,19 +160,36 @@ background-size: cover;
 
 
 #home .intro { 
+/* background-image: url(img/kaiqxku4wsa-ian-baldwin-cropped-d25.jpg);
+background-image: url(img/sean-pollock-203658.jpg);
+background-position: center bottom; */
+background: #000;
+}
+
+#thefirm .intro { 
 background-image: url(img/kaiqxku4wsa-ian-baldwin-cropped-d25.jpg);
 background-image: url(img/sean-pollock-203658.jpg);
-background-position: center bottom;
+/* background-position: center bottom;  */
 }
 
-#our-people .intro {
-background-image: url(img/stefan-stefancik-257625.jpg);
-
-}
+#our-people .intro {background-image: url(img/stefan-stefancik-257625.jpg);}
 #portfolio .intro {background-image: url(img/jc-gellidon-447350.jpg);}
 #our-impact .intro {background-image: url(img/larm-rmah-216854.jpg);}
 	
-	
+#testimonials img {
+	/* max-width: 10rem;
+	float: left; */
+	border-radius: 50%;
+	/* margin: 0 1rem 5rem 0; */
+	border: 5px  #be9c30 solid;
+}
+
+
+#featured img {
+	border-radius: 50%;
+	width: 60%;
+	margin: 2rem 0;
+}
 /* 
 
 #our-people figure:after {
@@ -203,17 +228,17 @@ h1, h2		{ /* margin-bottom: 2rem; */ line-height: 1 }
 
 b, strong	{ font-weight: 700; }
 
-h1			{ font-weight: 300; font-size: 3.0rem;  color: #29B2AD;/* letter-spacing: -0.2rem */ }	
+h1			{ font-weight: 700; font-size: 3.5rem; color: #be9c30 !important }	
+.lt-green  h1 { color: #fff !important }	
 h2			{ font-weight: 700; font-size: 2.0rem; /* color: #29B2AD; */ }	
-h3			{ font-weight: 700; font-size: 1.25rem; /* color: rgb(41, 178, 173); */ }	
+h3				{ font-weight: 700; font-size: 1.25rem; color: #be9c30; }	
+.lt-green h3	{ color: #fff; }	
 h4			{ font-weight: 400; font-size: 0.90rem; /* color: #757575 */ }	
 
-p			{ font-weight: 400; font-size: 0.9rem; /* font-family: 'Arimo' */ }	
+p			{ font-weight: 400; font-size: inherit; /* font-family: 'Arimo' */ }	
 
 figure 		{ background: #F5F5F5; overflow: hidden; }
 figcaption	{ font-weight: 400; font-size: 0.8rem; margin: 0.5rem; font-style: italic; }	
-.lt-green p,
-.dk-green p	{ font-weight: 400; font-size: 0.95rem; /* font-family: 'Arimo' */ }	
 
 /* h1, 
 h1 strong,
