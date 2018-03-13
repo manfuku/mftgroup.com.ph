@@ -6,7 +6,7 @@
 			<a href="index.php"><img src="img/logo-mft-gold.png"></a>
 		</div>
 		
-		<div class="col-auto d-none d-md-block">
+		<div class="d-none d-lg-flex col-lg-auto ">
 			<ul class="nav" >
 				<li><a href="index.php">Home</a></li>
 				<li><a href="thefirm.php">The Firm</a></li>

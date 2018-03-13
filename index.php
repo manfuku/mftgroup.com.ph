@@ -37,7 +37,7 @@
 
 
 		<div class="col-md-12 ">
-		<h1>Featured Companies</h1>
+		<h1>Latest Ventures</h1>
 		</div>
 		
 </div>
@@ -55,11 +55,7 @@
 		<p><button class="btn">Learn more</button></p>
 		</div>
 		
-		<div class="col-md-4 ">
-		<p><img src="img/home-flyspaces.jpg"></p>
-		<p>MFT Group taking Salad Stop to Spain
-		<p><button class="btn">Learn more</button></p>
-		</div>
+
 		
 </div>
 </div>
@@ -99,17 +95,17 @@
 
 
 		<div class="col-md-4 ">
-		<p class="text-center"><img src="img/stock-trade.jpg"></p>
+		<p class="text-center"><img src="img/asset.jpg"></p>
 		<h3>PHP 1.6 Billion Total Asset Portfolio Value</h3>
 		<p>Our asset business invests in a range of tangible assets through strategic partnership and subsidiaries from finance and banking to medical and food and beverage around the world. </p>
 		</div>
 		<div class="col-md-4 ">
-		<p class="text-center"><img src="img/stock-02.jpg"></p>
+		<p class="text-center"><img src="img/knowledge.jpg"></p>
 		<h3>Deep Industry Knowledge</h3>
 		<p>With experience ranging from end to end of vast and diverse fields, our key executives and founders draw from individual background from across the globe.  </p>
 		</div>
 		<div class="col-md-4 ">
-		<p class="text-center"><img src="img/stock-food.jpg"></p>
+		<p class="text-center"><img src="img/global.jpg"></p>
 		<h3>Rapidly Increasing Global Footprint </h3>
 		<p>Our investments span a wide range of industries around the world in established and growth oriented businesses alike. </p>
 		</div>

@@ -4,32 +4,31 @@
 <div class="row">
 
 		<div class="col-12 col-md-4 col-lg-2" >
-		<h3>THE FIRM </h3>
+		<h3><a href="thefirm.php">The Firm</a></h3>
 		<p>Mission and Vision  <br>                                                                             
 		Culture and Values <br>                                                                                        
 		Strategic Partnership<br>
-		Our People</p>
 		</div>
 		
 		<div class="col-12 col-md-4 col-lg-2" >
-		<h3>OUR FIRM</h3>
+		<h3><a href="ourpeople.php">Our People</a></h3>
 		</div>
 		
 		<div class="col-12 col-md-4 col-lg-2" >
-		<h3>PORTFOLIO</h3>
+		<h3><a href="portfolio.php">Portfolio</a></h3>
 		</div>
 		
 		<div class="col-12 col-md-4 col-lg-2" >
-		<h3>OUR IMPACT </h3>
+		<h3><a href="ourimpact.php">Our Impact</a></h3>
 		</div>
 		
 		<div class="col-12 col-md-4 col-lg-2 " >
-		<h3>GLOBAL PERSPECTIVES </h3>
+		<h3><a href="globalperspective.php">GLOBAL PERSPECTIVES  </a> </h3>
 		<p>Blog </p>
 		</div>
 		
 		<div class="col-12 col-md-4 col-lg-2" >
-		<h3>MEDIA CENTER </h3>
+		<h3><a href="media.php">Media Center</a> </h3>
 		<p>MFT in the News </p>
 		</div>
 
@@ -61,8 +60,20 @@
 <!--CONTAINER END-->
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/combine/
+npm/jquery@2.2.4,
+npm/scrollreveal@3.4.0"></script>
+<script >
+ window.sr = ScrollReveal();
+sr.reveal('section.row:nth-child(1n+2) div.row > *  ',{
+	origin: 'right',
+	scale: 1,
+	//reset: true,
+	distance: '3rem',
+	//delay: 300, 
+	duration: 2000 
+});
+</script>
 
 </body>
 </html>
