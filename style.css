@@ -1,0 +1,333 @@
+/* html {
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+} */
+
+/* STRUCTURE +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+body {
+margin: 0;
+font: 16px/1.5  'Work Sans', serif;
+-moz-osx-font-smoothing: grayscale;
+-webkit-font-smoothing: antialiased;
+color: #757575;
+color: #424242;
+
+}
+
+/* NAVIGATION +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+ul.nav li {
+	
+	margin-left: 1.5rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	
+}
+
+ul.nav li a {
+	
+	color: #fff !important;
+	font-family: Work Sans;
+	
+	
+}
+
+ul.nav li a:hover {
+	
+	text-decoration: none;
+	opacity: 1;
+	
+}
+
+.btn { font-weight: 600 }
+/* URL BAR FIX +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+/* html, body, .container-fluid { height: 100%; overflow: hidden; }
+.container-fluid { position: relative; overflow-y: auto; } */
+
+
+
+/* UTILS +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+a 			{ color: inherit !important; font-weight: 600;  }
+a:hover		{ text-decoration: none; opacity: 0.9 }
+
+img			{ width: 100%; max-width: 100%; }
+.on-dark	{ color: #fff; }
+.lt-green 	{ color: #000; background: #be9c30; }
+.dk-green 	{ color: #fff; background: #000; }
+
+.lt-green h1,
+.lt-green h2,
+.dk-green h1,
+.dk-green h2	{ color: inherit; }
+
+.text-green		{ color: #29B2AD;}
+
+/* SECTIONS & ROWS +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+.container .row { margin-bottom: 2rem }
+.container .row:last-child { margin-bottom: 0 }
+
+section { 
+/* padding-top: 	calc(6.4vw * 2);
+padding-bottom: calc(6.4vw * 2);  */
+position: relative;
+background: url(img/bg-80s.png);
+ /* background-size: cover;  */
+background-position: center center;
+}
+
+
+
+@media (min-width: 992px)  {
+
+	section { 
+/* 	padding-top: 	calc(6.4vw * 1);
+	padding-bottom: calc(6.4vw * 0.75);  */
+	position: relative;
+	}
+
+	
+}
+
+
+section::before,
+section::after {
+content: '';
+background: url(img/section-diagonal.svg) no-repeat;
+background-size: cover;
+width: 100%;
+/* height: 6rem; */
+height: 12vw;
+display: block;
+/* position: absolute; */
+} 
+
+		section::before {
+		content: '';
+		background-position: right;
+		margin-top: -1px;
+		} 
+
+		section::after {
+		content: '';
+		background-position: right;
+		transform: rotate(180deg);
+		margin-bottom: -1px;
+
+		} 
+ 
+section:nth-child(-n+2)::before,
+section:first-child::after,
+section:last-child::after {
+content: '';
+background: none;
+z-index: -1;
+} 
+
+@media (min-width: 992px ) {
+.col-md-1of5 {
+max-width: 20% !important;
+}
+}
+
+/* SPECIFIC SECTIONS +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+
+#header {
+position: absolute;
+width: 100%;
+padding: 1rem 0;
+z-index: 999;
+background: none;
+}
+
+#header::before,
+#header::after {
+	content: none;
+}
+
+/* #header .row > * {
+		z-index: 9999;
+} */
+
+#logo img { width: 5rem }
+
+.intro { 
+/* padding-top: 25vh  !important;
+padding-bottom: 20vh !important; */
+background-position: center center;
+background-size: cover;
+}
+
+/* .intro:before {
+height: 25vw;
+} */
+
+
+#home .intro { 
+/* background-image: url(img/kaiqxku4wsa-ian-baldwin-cropped-d25.jpg);
+background-image: url(img/sean-pollock-203658.jpg);
+background-position: center bottom; */
+background: #000;
+}
+
+#thefirm .intro { 
+background-image: url(img/kaiqxku4wsa-ian-baldwin-cropped-d25.jpg);
+background-image: url(img/sean-pollock-203658.jpg);
+/* background-position: center bottom;  */
+}
+
+#our-people .intro {background-image: url(img/stefan-stefancik-257625.jpg);}
+#portfolio .intro {background-image: url(img/jc-gellidon-447350.jpg);}
+#our-impact .intro {background-image: url(img/larm-rmah-216854.jpg);}
+	
+#testimonials img ,
+#our-people .people img,
+#our-people .profile img {
+	border-radius: 50%;
+	border: 5px  #be9c30 solid;
+}
+
+
+#featured img,
+#our-people #people img {
+
+	border-radius: 50%;
+	width: 60%;
+	margin: 2rem 0;
+}
+
+#our-people .people img {
+
+	border-radius: 50%;
+	width: 12rem;
+	margin: 2rem 0;
+}
+/* 
+
+#our-people figure:after {
+	content: "";
+	display: block; 
+	width: 100%;
+	height: 100%;
+	background: #29B2AD;
+} */
+
+#subsidiaries ul  { 
+list-style: none;
+margin: 0;
+padding: 0;
+}
+#subsidiaries ul li { 
+list-style: none;
+width: 30%;
+display: inline-block;
+padding: 1rem ;
+text-align: center;
+}
+
+#subsidiaries ul li img { 
+max-height: 5rem;
+max-width: 100%;
+width: auto;
+}
+
+#footer {
+/* padding-top: calc(6.4vw * 2);
+padding-bottom: calc(6.4vw * 1); */
+}
+
+
+/* TYPOGRAPHY +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+h1, h2		{ /* margin-bottom: 2rem; */ line-height: 1 }	
+
+b, strong	{ font-weight: 700; }
+
+h1			{ font-weight: 700; font-size: 1.75rem; color: #be9c30 !important }	
+.lt-green  h1 { color: #fff !important }	
+@media (min-width: 768px) {	h1 {  font-size: 3.5rem; }}
+h2			{ font-weight: 700; font-size: 1.5rem; color: #be9c30; }	
+@media (min-width: 768px) {	h2 {  font-size: 2rem; }}
+
+h3				{ font-weight: 700; font-size: 1rem; color: #000; text-transform: uppercase; }	
+.lt-green h3	{ color: #fff; }	
+.dk-green h3	{ color: #be9c30;color: #33CCCC; }	
+h4			{ font-weight: 400; font-size: 0.90rem; /* color: #757575 */ }	
+
+p, li			{ font-weight: 400; font-size: 0.85rem;  
+font-family:'Source Serif Pro'; font-size: 0.9rem  }	
+
+figure 		{ background: #F5F5F5; overflow: hidden;   }
+#media-center  figure  {max-height: 13rem;}
+figcaption	{ font-weight: 400; font-size: 0.8rem; margin: 0.5rem; font-style: italic; }	
+
+/* h1, 
+h1 strong,
+h2			{ font-family: 'Aileron' } */
+
+
+
+
+
+/* TABLET & UP +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+@media (min-width: 600px) {
+
+/* .container .row > div > :last-child { margin-bottom: 0 } */
+
+/* section.lt-green,
+section.dk-green {
+padding-top: 7rem;
+padding-bottom: 8rem;
+} */
+
+/* #logo img 	{ width: 6rem	}
+
+#intro h1	{ font-size: 4.25rem; }	
+h1			{ font-size: 3.00rem; }	
+h2			{ font-size: 2.00rem; }	
+h3, p		{ font-size: 1.10rem; }	
+h4			{ font-size: 0.90rem; }	 */
+
+
+}
+
+
+
+
+
+
+/* DESKTOP & UP +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+@media (min-width: 992px)  {
+
+/* #intro 		{ padding-top: 30vh; }
+
+#logo img 	{ width: 8rem	}
+
+h1, h2		{ margin-bottom: 5rem }	
+
+h1			{ font-size: 4.25rem; }	
+h2			{ font-size: 2.50rem; }	
+h3, p		{ font-size: 1.125rem; }	
+h4			{ font-size: 1.5rem; }	
+
+#our-people-people img 		{ max-width: 16rem } */
+
+
+}
+
+
+
+
+
+
+
+
+/* SET MAX WIDTH TO 1400 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+@media (min-width: 1400px) {
+	
+.container 	{ width: 1400px }
+
+/* #intro h1	{ font-size: 6.0rem; }	 */
+
+}
+
+
